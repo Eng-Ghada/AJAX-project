@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Redressed&family=Yeon+Sung&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Yeon+Sung&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        
+        <section id="moviesSec">
+            <div class="container px-4">
+                <div class="search row  d-flex justify-content-center my-2 ">
+                    <div class="my-5  col-md-6">
+                        <input type="text" id="searchBoxAll" class="" placeholder="get movies by word">
+                    </div>
+
+                    <div class="my-5 col-md-6">
+                        <input type="text" id="searchBox" class="  " placeholder="Search...">
+                    </div>
+
+                    <div id="moviesData" class="row mt-5">
+                        <div id="filmPoster" class="col-md-4 mb-5 text-center">
+                            
+                        </div>
+                       
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <div id="lightSide" class="bg-light ">
+                <div class="d-flex justify-content-center">
+                    <div class="trapizode"></div>
+                </div>
+               
+                <div class="vh-100 d-flex justify-content-center align-items-center ">
+                    <button id="menuBtn" class=""><i id="menuBtnIcon" class="fas fa-bars    "></i></button>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <div class="end" >
+                        <div class="mb-3"><i class="fas fa-globe"></i></div>
+                        <div><i class="fas fa-share-alt"></i></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="menu ">
+                
+                <ul>
+                    <li><a id="a1">Now playing</a></li>
+                    <li><a id="a2" >Popular</a></li>
+                    <li><a id="a3" >Top Rated</a></li>
+                    <li><a id="a4" >Trending</a></li>
+                    <li><a id="a5" >Upcoming</a></li>
+                    <li><a id="a6" href="#contact">Contact Us</a></li>
+
+                </ul>
+                <div class="layer"></div>
+
+                <div class="end ml-3 ">
+                    <div class="row ml-4 mb-3 d-flex align-items-end">
+                        <div class="mr-3"><i class="fab fa-facebook-f"></i></div>
+                        <div class="mr-3"><i class="fab fa-twitter"></i></div>
+                        <div class=""><i class="fas fa-globe"></i></div>
+                    </div>
+                    
+                    <div>
+                        <p class="Copyright text-muted">Copyright Â© 2019 All Rights Reserved.</p>
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+
+        
+        <!--Contact Section-->>
+        <section id="contact">
+            <div class="container my-5 ">
+                <h2 class="text-light ">Contact Us</h2>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <input id="userName" type="text" class="mt-4 " placeholder="Enter Your Name">
+                        <p id="userNameAlert"  >Your Name is not valid</p>
+                        <input id="userPhone" type="text" class="mt-4 " placeholder="Enter Phone">
+                        <p id="userPhoneAlert">entre valid phone</p>
+                        <input id="userPass" type="password" class="mt-4 " placeholder="Enter Passsword">
+                        <p id="userPassAlert">entre valid password *Minimum eight characters, at least one letter and one number:*</p>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="userEmail" type="email" class=" mt-4" placeholder="Enter Email">
+                        <p id="userEmailAlert">entre valid email</p>
+                        <input id="userAge" type="text" class="mt-4 " placeholder="Enter Age">
+                        <p id="userAgeAlert">entre valid Age</p>
+                        <input id="userRepass" type="password" class=" mt-4" placeholder="Enter Repassword">
+                        <p  id="userRepassAlert">entre valid Repassword</p>
+                    </div>
+
+                    <button id="submitBtn"  class="btn btn-outline-danger  bg-transparent mt-4 ml-3">Submit</button>
+                </div>
+            </div>
+        </section>
+        
+
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

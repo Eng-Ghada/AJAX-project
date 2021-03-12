@@ -1,0 +1,236 @@
+body
+{
+    background-color: black;
+    overflow-x: hidden;
+    /*font-family: 'Yeon Sung', cursive;
+    font-family: 'Noto Serif', serif;*/
+    font-family: 'Redressed', cursive;
+    font-size: larger;
+}
+
+/**/
+input
+{
+    border: none;
+    border-bottom:1px solid blanchedalmond ;
+    background-color: black;
+    width:100%;
+    color: gray;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: x-large;   
+}
+
+input:focus
+{
+    outline: none !important;
+    box-shadow: 0 0 10px #336eac;
+}
+
+
+#moviesData img
+{
+   height: 100%;
+    width: 100%;
+}
+
+#moviesData .item
+{
+    position: relative;
+    height: 500px;
+    overflow: hidden; 
+}
+
+
+/*layer of information of each movie*/
+.filmInfo
+{
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(236, 234, 230, 0.7);
+    overflow-y: hidden;
+    transition: top 1s; 
+}
+.item:hover .filmInfo
+{
+   top:0%;
+}   
+
+
+/*paragraph of overview*/
+#moviesData .filmInfo .overview
+{
+  line-height: 20px;
+}
+
+
+/***************************************************************************************************/
+/*SideBar*/
+
+/*light part of sidebar*/
+#lightSide
+{
+    width:55px ;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left:0px;
+    z-index: 5;  
+}
+
+#lightSide i:hover
+{
+    cursor: pointer;
+}
+
+/*dark part of sidebar*/
+aside .menu
+{
+    width:204px ;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left:-200px;
+    z-index: 5;
+    background-color: rgb(17, 16, 16);
+    color: white;
+}
+
+#menuBtn
+{
+    border: none;
+    text-decoration-style: none;
+    outline:none;
+    box-shadow: none;
+}
+
+#menuBtn i
+{
+    font-size: x-large;
+}
+
+aside ul li
+{
+    list-style-type: none;
+    margin-top: 25px;
+    cursor: pointer;
+}
+li:hover
+{
+    color: rgb(163, 40, 19);
+}
+aside a
+{
+    color: white;
+    opacity: 0%;
+    position: absolute;
+    z-index: 5;
+    height: 50%;
+    overflow: hidden;   
+}
+
+/*layer hide menu items befor it appear*/
+.layer
+{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index:10;
+    background-color: rgb(17, 16, 16);
+}
+
+ #a1
+{
+    top:40%
+}
+#a2
+{
+    top: 50%;
+}
+#a3
+{
+    top: 60%;
+} 
+#a4
+{
+    top: 80%;
+} 
+#a5,#a6
+{
+    top: 100%;
+}
+
+
+
+aside a:hover
+{
+    color: rgb(163, 40, 19);  
+}
+
+aside a:link 
+{
+    text-decoration: none;
+    color:rgb(163, 40, 19);  ;
+}
+
+aside .menu i:hover
+{
+    color: rgb(163, 40, 19);
+    cursor: pointer;
+}
+aside .menu i
+{
+    font-size: medium;
+}
+.end
+{
+    position: absolute;
+    bottom: 20px;
+    z-index: 20;
+}
+
+.trapizode
+{   
+    
+    width: 30px;  
+    height: 50px;  
+
+    position: absolute;
+    top: 20px;
+    background-image: url(../images/logo.png);
+    background-size: cover;
+
+/* border-left: 30px;
+border-bottom: 90px;
+border-right: 120px;
+
+border-width: 8px;
+border-style: solid;
+border-color: rgb(24, 23, 23);
+    */
+}
+ 
+
+.Copyright
+{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+/******************************************************************************************************/
+/*Contact Section*/
+
+#contact p
+{
+    text-align: center;
+    background-color: rgb(226, 153, 153);
+    display: none;
+}
+
